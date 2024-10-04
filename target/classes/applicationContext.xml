@@ -6,52 +6,33 @@
 
 	<!-- bean definitions here -->
 	<bean name="add" class="spring.core.entity.Address">
-		<property name="city" value="Noida" />
-		<property name="state" value="UP" />
+		<constructor-arg name="city" value="Noida" />
+		<constructor-arg name="state" value="UP" />
 	</bean>
 
-	<bean id="emp" class="spring.core.entity.Employee">
-		<property name="id" value="101" />  <!-- property tag will create a bean by calling setters -->
-		<property name="name" value="Ansh" />
+	<!-- <bean id="emp" class="spring.core.entity.Employee" autowire="constructor"> 
+		<property name="id" value="101" /> property tag will create a bean by calling 
+		setters <property name="name" value="Ansh" /> <property name="gender" value="Male" 
+		/> <property name="contacts"> <list> <value>987654</value> <value>987654</value> 
+		<value>987654</value> <value>987654</value> <value>987654</value> <value>987654</value> 
+		<value>987654</value> </list> </property> <property name="set"> <set> <value>3457</value> 
+		<value>1457</value> <value>2457</value> <value>5457</value> <value>4457</value> 
+		<value>6457</value> <value>3457</value> <value>3457</value> </set> </property> 
+		<property name="map"> <map> <entry key="1" value="ONE" /> <entry key="2" 
+		value="Two" /> <entry key="3" value="Three" /> <entry key="4" value="Four" 
+		/> <entry key="1" value="Oneeee" /> </map> </property> </bean -->
+	
+
+
+	<bean id="emp2" class="spring.core.entity.Employee">
+		<property name="id" value="102" />
+		<property name="name" value="Vikas" />
 		<property name="gender" value="Male" />
-		<property name="address" ref="add" />
-		<property name="contacts">
-			<list>
-				<value>987654</value>
-				<value>987654</value>
-				<value>987654</value>
-				<value>987654</value>
-				<value>987654</value>
-				<value>987654</value>
-				<value>987654</value>
-			</list>
-		</property>
-		<property name="set">
-			<set>
-				<value>3457</value>
-				<value>1457</value>
-				<value>2457</value>
-				<value>5457</value>
-				<value>4457</value>
-				<value>6457</value>
-				<value>3457</value>
-				<value>3457</value>
-			</set>
-		</property>
-
-		<property name="map">
-			<map>
-				<entry key="1" value="ONE" />
-				<entry key="2" value="Two" />
-				<entry key="3" value="Three" />
-				<entry key="4" value="Four" />
-				<entry key="1" value="Oneeee" />
-			</map>
+		<property name="address">
+			<bean class="spring.core.entity.Address">
+				<property name="city" value="GZB" />
+				<property name="state" value="UP" />
+			</bean>
 		</property>
 	</bean>
-
-
-	<!-- <bean id="emp2" class="spring.core.entity.Employee"> <constructor-arg 
-		name="id" value="102" type="int"/> <constructor-arg name="name" value="Vikas"/> 
-		<constructor-arg name="gender" value="Male"/> </bean> -->
 </beans>

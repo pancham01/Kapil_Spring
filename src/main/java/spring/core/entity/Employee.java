@@ -31,6 +31,7 @@ public class Employee {
 		this.contacts = contacts;
 		this.set = set;
 		this.map = map;
+		System.out.println("Employee.Employee(6)");
 	}
 
 	public List<Integer> getContacts() {

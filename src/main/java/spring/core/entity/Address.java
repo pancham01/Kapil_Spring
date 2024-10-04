@@ -14,6 +14,8 @@ public class Address {
 		super();
 		this.city = city;
 		this.state = state;
+		System.out.println("Address.Address(2)");
+
 	}
 
 	public String getCity() {

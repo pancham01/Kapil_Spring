@@ -9,7 +9,7 @@ public class App {
 
 	public static void main(String[] args) {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Employee bean =(Employee) ioc.getBean( "emp");
+		Employee bean =(Employee) ioc.getBean( "emp2");
 		
 		System.out.println(bean);
 
