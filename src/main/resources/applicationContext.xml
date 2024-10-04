@@ -15,6 +15,39 @@
 		<property name="name" value="Ansh" />
 		<property name="gender" value="Male" />
 		<property name="address" ref="add" />
+		<property name="contacts">
+			<list>
+				<value>987654</value>
+				<value>987654</value>
+				<value>987654</value>
+				<value>987654</value>
+				<value>987654</value>
+				<value>987654</value>
+				<value>987654</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>3457</value>
+				<value>1457</value>
+				<value>2457</value>
+				<value>5457</value>
+				<value>4457</value>
+				<value>6457</value>
+				<value>3457</value>
+				<value>3457</value>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="1" value="ONE" />
+				<entry key="2" value="Two" />
+				<entry key="3" value="Three" />
+				<entry key="4" value="Four" />
+				<entry key="1" value="Oneeee" />
+			</map>
+		</property>
 	</bean>
 
 
