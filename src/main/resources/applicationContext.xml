@@ -21,7 +21,7 @@
 		<property name="map"> <map> <entry key="1" value="ONE" /> <entry key="2" 
 		value="Two" /> <entry key="3" value="Three" /> <entry key="4" value="Four" 
 		/> <entry key="1" value="Oneeee" /> </map> </property> </bean -->
-	
+
 
 
 	<bean id="emp2" class="spring.core.entity.Employee">
@@ -33,6 +33,15 @@
 				<property name="city" value="GZB" />
 				<property name="state" value="UP" />
 			</bean>
+		</property>
+	</bean>
+
+	<bean id="emp3" class="spring.core.entity.Employee" >
+		<property name="id" value="103" />
+		<property name="name" value="Vikas" />
+		<property name="gender" value="Male" />
+		<property name="address" ref="add">
+
 		</property>
 	</bean>
 </beans>
